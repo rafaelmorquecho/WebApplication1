@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+<h2>formulario de usuario</h2>
+<form method="get" action="echo">
+  <fieldset>
+    <legend>Personal Particular</legend>
+    Nombre: <input type="text" name="username" /><br /><br />
+    Clave: <input type="password" name="password" /><br /><br />
+    Genero: <input type="radio" name="gender" value="m" checked />Hombre
+    <input type="radio" name="gender" value="f" />Mujer<br /><br />
+    Edad: <select name = "age">
+      <option value="1">&lt; 1 year old</option>
+      <option value="99">1 to 99 years old</option>
+      <option value="100">&gt; 99 years old</option>
+    </select>
+  </fieldset>
+ 
+  <fieldset>
+    <legend>Languages</legend>
+    <input type="checkbox" name="language" value="java" checked />Java
+    <input type="checkbox" name="language" value="c" />C/C++
+    <input type="checkbox" name="language" value="cs" />C#
+  </fieldset>
+ 
+  <fieldset>
+    <legend>Instruction</legend>
+    <textarea rows="5" cols="30" name="instruction">Enter your instruction here...</textarea>
+  </fieldset>
+ 
+  <input type="hidden" name="secret" value="888" />
+  <input type="submit" value="SEND" />
+  <input type="reset" value="CLEAR" />
+</form>
+</body>
+</html>
+</html>
